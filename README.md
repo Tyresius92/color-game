@@ -10,15 +10,21 @@ In either mode, the user is presented with a random RGB value, and asked to gues
 
 The user is presented with three colors. 
 
-### Hard Mode
+### Medium Mode
 
 The user is presented with six colors. 
+
+### Hard Mode
+
+The user is presented with nine colors.
+
+### Boss Mode
+
+The user is presented with 9 grayscale colors.
 
 ## Possible Extensions
 
 - Add a scoring mechanic
 - Two player mode
-- Super Hard mode (9 tiles)
-- Boss mode (all colors very similar)
 - Add a timing mechanic (how many can you get in 1 minute, etc.)
 - Set up game on Heroku or similar

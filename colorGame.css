@@ -48,6 +48,7 @@ h1 {
 }
 
 #message {
+	margin: auto;
 	display: inline-block;
 	width: 20%
 }

@@ -26,7 +26,14 @@ function initializeModeButtons() {
 			}
 			this.classList.add("selected");
 
-			this.textContent === "Easy" ? numColors = 3 : numColors = 6;
+			if (this.textContent === "Easy") {
+				numColors = 3;
+			} else if (this.textContent === "Medium") {
+				numColors = 6;
+			} else {
+				numColors = 9; 
+			}
+
 			resetGame();
 		})
 	}
@@ -82,11 +89,23 @@ function resetGame() {
 function generateRandomColors(num) {
 	var arr = [];
 
-	for (var i = 0; i < num; i++) {
-		arr.push(randomColor()); 
-	}
+	var selectedMode = document.querySelector(".selected"); 
 
+	for (var i = 0; i < num; i++) {
+		if (selectedMode.textContent === "Boss") {
+			arr.push(grayscaleColor()); 
+		} else {
+			arr.push(randomColor()); 
+		}
+	}
+	
 	return arr; 
+}
+
+function grayscaleColor() {
+	var n = Math.floor(Math.random() * 256);
+
+	return "rgb(" + n + ", " + n + ", " + n + ")";
 }
 
 function randomColor() {
