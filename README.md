@@ -21,3 +21,4 @@ The user is presented with six colors.
 - Super Hard mode (9 tiles)
 - Boss mode (all colors very similar)
 - Add a timing mechanic (how many can you get in 1 minute, etc.)
+- Set up game on Heroku or similar
